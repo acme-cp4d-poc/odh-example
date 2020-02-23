@@ -16,10 +16,17 @@ and is based on procedures
 
 The Operator Lifecycle Manager (OLM) is a tool to help manage the Operators running on your cluster.
 
-If the OLM is already installed, you can skip this section. 
-The OLM is installed in OpenShift version 4.x by default
+If you are running OpenShift 3.11 determkne if the OLM is already installed. Note the OLM is installed in OpenShift version 4.x by default
 
-Install the OLM by running the following command:
+1. Log onto OpenShift Cluster 
+![image](./images/oc-cluster-catalog.png)
+
+1. Determine if you already have OLM installed by accessing the **Cluster Console**
+If you see Operator in list on left you can skip this section. 
+
+![image](./images/oc-cluster-console-1.png)
+
+1. If not run the following command to install the OLM:
 
 ```
 
@@ -27,9 +34,25 @@ $ curl -sL https://github.com/operator-framework/operator-lifecycle-manager/rele
 
 ```
 
+1. Verify that OLM has een successfully installed into OpenShift Cluster by access Cluster Console again.
 
-Install the operator by running the following command. This Operator is installed in the "operators" namespace and is usable from all namespaces in the cluster.
+![image](./images/oc-cluster-console-2.png)
+
 ## References
 1.	operator-lifecycle-manager, https://github.com/operator-framework/operator-lifecycle-manager , A management framework for extending Kubernetes with Operators
 2.	Opendatahub-operator, https://gitlab.com/opendatahub/opendatahub-operator/-/tree/master
 3.	Manually Install OpenData Hub, https://gitlab.com/opendatahub/opendatahub-operator/-/blob/master/docs/manual-installation.adoc
+
+
+
+
+![image](./images/imageA.png)
+
+![image](./images/imageB.png)
+
+![image](./images/imageC.png)
+![image](./images/imageD.png)
+
+![image](./images/imageE.png)
+
+![image](./images/imageF.png)
